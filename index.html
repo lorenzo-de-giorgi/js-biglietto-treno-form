@@ -16,7 +16,31 @@
     <title>js-biglietto-treno-form</title>
 </head>
 <body>
-    
+    <div class="justify-content-center">
+        <form class="row gy-2 gx-3 align-items-center justify-content-center ldg-margint-form">
+            <div class="col-auto">
+              <label for="autoSizingInput">Nome e Cognome</label>
+              <input type="text" class="form-control" id="autoSizingInput" required>
+            </div>
+            <div class="col-auto">
+                <label for="autoSizingInput">Distanza in KM</label>
+                <input type="text" class="form-control" id="autoSizingInput" required>
+            </div>
+            <div class="col-auto">
+              <label for="autoSizingSelect">Fascia di età</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected>Scegli</option>
+                <option value="underage">Minorenne</option>
+                <option value="normal">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+              </select>
+            </div>
+          </form>
+        <div class="d-flex justify-content-center ldg-margint-button">
+            <button id="create-ticket" type="submit" class="btn btn-primary me-2">Invia</button>
+            <button id="reset" type="submit" class="btn btn-danger">Annulla</button>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
