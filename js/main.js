@@ -38,9 +38,9 @@ createTicket.addEventListener('click', function(){
     function getRndInteger(min, max) {
         return Math.floor(Math.random() * (max - min + 1) ) + min;
     }
-
+    
     let carrozza = getRndInteger(1, 12);
-    let code = getRndInteger(5000, 10000)
+    let code = getRndInteger(5000, 10000);
 
     //stampo dati in table
     elName.innerText = ticketName;
